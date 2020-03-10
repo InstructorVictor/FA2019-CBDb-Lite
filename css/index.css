@@ -1,0 +1,105 @@
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Special styling for landscape view */
+@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+    
+}
+
+/* Class to target the parent that contains an image */
+p.pImgVertical {
+    width: 55%;
+    margin: auto;
+    margin-top: 5%;
+}
+
+p.pImgHorizontal {
+    width: 90%;
+    margin: auto;
+}
+
+/* Target a Paragraph with a certain class, but then the Image inside of it */
+/* Note: the Comma because it's apply to two different Classes */
+p.pImgVertical img, p.pImgHorizontal img {
+	width: 100%;
+	border-radius: 25px;
+}
+
+.ui-dialog-contain > .ui-content {
+    background-color: purple;
+}
+
+/* The active state (color) of a button is changed */
+.ui-page-theme-a .ui-btn.ui-btn-active {
+    background-color: red;
+}
+
+@font-face {
+    font-family: '20_dbregular';
+    src: url('20db-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.ui-header .ui-title {
+    font-family: "20_dbregular";
+    font-size: 0.75em;
+}
+
+/* Style the (dynamic) Table that displays our comics */
+
+div#divViewComics table {
+    background-color: aquamarine;
+    margin: auto;
+    width: 95%;
+    border: 5px solid black;
+    word-wrap: break-word;
+}
+
+div#divViewComics table th {
+    background-color: rebeccapurple;
+    color: white;
+}
+
+div#divViewComics table td, div#divViewComics table th {
+    border: 2px solid red;
+}
+
+/* Style the Even Rows of the Table */
+div#divViewComics table tr:nth-of-type(even) {
+    background-color: rgb(0, 50, 200);
+}
+
+/* Style the Odd Rows of the Table */
+div#divViewComics table tr:nth-of-type(odd) {
+    background-color: rgba(0, 50, 200, 0.5);
+    /*filter: opacity(.5); */
+}
+
+/* Resize the View More icon */
+div#divViewComics table td.btnShowComicsInfo {
+    text-align: center;
+    font-size: 105%;
+}
+
+/* Resize the photos we captured via Camera plugin */
+.picThumb {
+    width: 100%;
+}
+
+/*
+	Name:	 Victor Campos <vcampos@sdccd.edu>
+	Project: CBDb (The Comic Book Database App)
+	Date: 	 2020-01-16
+	Version: 1.0
+	Desc:	 An app for multiple users to keep track of a comic book collection.
+*/
